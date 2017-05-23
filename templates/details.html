@@ -1,0 +1,17 @@
+<div ng-controller="DetailController" ng-cloak>
+	<div ng-init=getDetails() id="detailPage"> 
+		<a ui-sref="search" style="margin-left: 12%">Home</a> / <span id="specialBlue">{{parent}}</span>
+
+			<md-grid-list id="contain"
+	            md-cols="1" md-cols-sm="1" md-cols-md="3" md-cols-gt-md="3"
+	            md-row-height-gt-md="1:1" md-row-height="5:3"
+	            md-gutter="12px" md-gutter-gt-sm="20px" >
+
+	           <md-grid-tile ng-repeat="x in details" md-colspan-sm="1" md-colspan-xs="1" ng-class="x.background" id="blocks">
+                  <img src="{{x.card_thumbnail}}" id="images" />
+                  <div>{{x.name}}</div>
+                 <figcaption id="rent">Rent starts from <strong>Rs {{x.rent.monthly_rent}}</strong>/mon</figcaption>
+            	</md-grid-tile>
+          	</md-grid-list>
+	</div>
+</div>

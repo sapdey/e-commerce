@@ -1,0 +1,85 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myApp" ng-cloak>
+ 
+<nav class="navbar">
+  <p id="smallLogo">GO<strong>LUXURY</strong><span id="dot">.</span></p>
+  <p id="furn">Furniture</p>
+  <p id="app">Appliances</p>
+  <p id="off">Offers</p>
+  <input type="search" id="smallSearch"><md-button id="smallButton"><i class="material-icons">search</i></md-button>
+  <p id="pho"><i class="material-icons">phone</i><strong>080.345333432</strong></p>
+  <md-button class="fooBut">Login</md-button>
+<hr>
+</nav>
+
+<div layout="column" ng-cloak>
+     <ui-view></ui-view>
+</div>
+
+
+<footer>
+  <hr>
+  <md-grid-list id="myFooter"
+        md-cols-xs="2" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
+        md-row-height-gt-md="1:1" md-row-height="2:2"
+        md-gutter="12px" md-gutter-gt-sm="8px" >
+
+    <md-grid-tile>
+        <strong>RENT BY</strong>
+        <br><br>
+        Living room <br>
+        Bedroom<br>
+        Kitchen
+    </md-grid-tile>
+
+    <md-grid-tile >
+        <strong>USEFUL LINKS</strong>
+        <br><br>
+        CONTACT <br>
+        FAQs<br>
+        T&
+    </md-grid-tile>
+
+    <md-grid-tile >
+    <strong>POPULAR</strong>
+    <br><br>
+    <md-button class="fooBut">sofas</md-button>
+    <md-button class="fooBut">TV</md-button>
+    <md-button class="fooBut">BED</md-button>
+    <br>
+    <md-button class="fooBut">frigde</md-button>
+    <md-button class="fooBut">chair</md-button>
+    </md-grid-tile>
+
+    <md-grid-tile >
+    <strong>Guaranted 100% Original</strong>
+    
+    </md-grid-tile>
+  </md-grid-list>
+
+</footer>
+
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/SearchController.js"></script>
+  <script src="js/DetailController.js"></script>
+  
+</body>
+</html>

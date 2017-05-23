@@ -1,0 +1,19 @@
+<div ng-controller="SearchController as item" ng-cloak>
+  <md-content layout-padding layout="column">
+    <form>
+      <div id="logo"><span>G</span></div>
+      <h3>GO<strong>LUXURY</strong></h3>
+      <p>Have everything. Own nothing</p>
+
+      <div><md-autocomplete md-no-cache="true" md-selected-item="item.selectedItem" md-item-text="item.name" md-search-text="searchText" md-items="item in query(searchText)" placeholder="Search for furniture, appliances, etc...">
+        <md-item-template>
+          <a ui-sref="details({parent: item.cat_name.parnet , nick: item.cat_name.nick})"><span md-highlight-text="searchText">{{item.cat_name.name}} {{item.type.name}} in <a id="specialBlue">{{item.cat_name.parnet}}</a></span></a>
+        </md-item-template>
+        <md-not-found>
+            No matches found.
+        </md-not-found>
+      </md-autocomplete><md-button class="md-raised"><i class="material-icons">search</i></md-button></div>
+
+    </form>
+  </md-content>
+</div>
