@@ -10,7 +10,7 @@ angular.module('myApp', ['ngMaterial', 'ui.router'])
             controller: 'SearchController'
         })
         .state('details', {
-             url: '/details/:parent/?nick',
+             url: '/:parent/?nick',
             templateUrl: 'templates/details.html',
             controller: 'DetailController'
         });

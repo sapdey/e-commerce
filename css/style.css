@@ -114,6 +114,10 @@ nav > p#off {
   border-radius: 50%;
 }
 
+#searchCon {
+  margin-bottom: 100px;
+}
+
 #pho {
   margin-left: 4%;
 }
@@ -122,11 +126,14 @@ nav > p > i {
   font-size: 15px !important;
 }
 
+#detailPage {
+  margin: 0 12% 5% 12%;
+}
+
 #contain {
   
-  margin: 5% 12%;
+  margin-top: 5%;
   text-align: center;
-  padding-bottom: 50% !important;
 }
 
 figure{
@@ -153,7 +160,7 @@ figure{
 }
 
 footer {
-  margin: 10% 12% 0 15%;
+  margin: 0 13% 0 13%;
   justify-content: left;
 }
 
