@@ -184,3 +184,15 @@ footer > md-grid-list md-grid-tile figure {
 #myFooter {
   padding-bottom: 10px !important;
 }
+
+#count {
+  font-size: 13px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
+div > div > hr {
+  margin-bottom: 10px;
+}
